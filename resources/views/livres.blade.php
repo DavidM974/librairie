@@ -34,7 +34,7 @@
       </div>
     </div>
     
-@include('component.tablelivres')
+@include('component.tableLivres')
 
 
 @endsection
