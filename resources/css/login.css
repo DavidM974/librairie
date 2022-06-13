@@ -1,0 +1,71 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1.title {
+        @apply text-3xl font-semibold text-center text-blue-700;
+    }
+}
+  
+@layer components {
+    .container-login {
+        @apply relative flex flex-col justify-center min-h-screen overflow-hidden;
+    }
+
+    .box-login {
+        @apply w-full p-6 m-auto bg-white border-t border-blue-600 rounded shadow-lg shadow-blue-800/50 lg:max-w-md md:max-w-md sm:max-w-md;
+    }
+
+    .label{
+        @apply block text-base text-gray-800;
+    }
+    .form-button {
+        @apply px-3 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-500 rounded-md dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:bg-indigo-700 hover:bg-indigo-600 focus:outline-none focus:bg-indigo-500 focus:ring focus:ring-indigo-300 focus:ring-opacity-50;
+    }
+
+
+    input[type="text"], input[type="password"], input[type="email"], textarea {
+        @apply block w-full px-4 py-2 mt-2 text-blue-700 bg-white border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40
+    }
+
+    .is-invalid {
+        @apply border-red-400 ring-red-300 focus:ring focus:ring-opacity-40
+    }
+
+    .link {
+        @apply text-xs text-gray-600 hover:underline;
+    }
+
+    .button-valid-login, input[type="submit"] {
+    @apply w-full px-4 py-2 tracking-wide text-lg text-white font-medium transition-colors duration-200 transform bg-blue-700 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600;
+    }
+
+    .minimal{
+        @apply mt-8 text-xs font-light text-center text-gray-700;
+    }
+    .minimal-link{
+        @apply font-medium text-blue-600 hover:underline;
+    }
+
+    .form-select {
+        @apply appearance-none
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding bg-no-repeat
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+    }
+
+
+}
