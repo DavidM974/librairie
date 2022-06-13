@@ -15,7 +15,7 @@
 <div class="bg-white pb-4 px-4 rounded-md w-full">
     <div class="flex justify-between w-full pt-6 ">
       @if(session()->has('user') and session()->get('user')->hasRole('ROLE_USER'))
-        @include('component.addlivre')
+        @include('component.addLivre')
       @endif    
     </div>
 
