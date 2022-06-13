@@ -81,7 +81,7 @@
                         <label for="title" class="label">Titre du livre</label>
                         @error('title') 
                             <p class=" text-sm text-red-500 mt-0 py-0">
-                                Veuillez entrer un titre
+                                Veuillez entrer un titre :
                             </p>
                             @enderror
                         <input placeholder="Votre titre" name="title" type="text" value="{{ old('title')}}" class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-indigo-400 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-40">
